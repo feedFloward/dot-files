@@ -28,5 +28,6 @@ require('lazy').setup({
     require 'plugins.debug',
     require 'plugins.vim-tmux-navigator',
     require 'plugins.markview',
+    require 'plugins.neotest-python',
 })
 
