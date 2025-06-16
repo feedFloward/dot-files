@@ -20,6 +20,8 @@ return {
 })
       local map = vim.keymap.set
       map("n", "<leader>td", function() require("neotest").run.run({ strategy = "dap" }) end, {desc="Debug nearest test"})
+      map("n", "<leader>tr", function() require("neotest").run.run() end, {desc="Run nearest test"})
+      map("n", "<leader>tf", function() require("neotest").run.run(vim.fn.expand("%")) end, {desc="Run the current file"})
 end,
 }
 }
